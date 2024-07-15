@@ -2,14 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import toastify CSS
-import Header from './components/Header';
+import Header from './components/Header'; // Note the updated path
 import Dashboard from './pages/Dashboard';
 import Documents from './pages/Documents';
 import Instructions from './pages/Instructions';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 import authService from './services/authService';
-import './App.css';
+import DocumentForm from './pages/DocumentForm'; // Import DocumentForm 
+import DocumentDetails from './pages/DocumentDetails'; // Import DocumentDetails
+import './App.css'; // Import your App-level CSS for styling
 
 
 function App() {
